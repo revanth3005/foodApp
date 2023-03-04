@@ -1,0 +1,17 @@
+.menuDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btnn{
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+.btnn:active{
+    transform: translateY(3px);
+}
+.bt1{
+    transform: translateY(3px) !important;
+}

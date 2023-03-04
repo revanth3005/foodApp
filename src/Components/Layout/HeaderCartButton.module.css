@@ -1,0 +1,36 @@
+.cartButton{
+    width: 100px;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cartButton:hover{
+    background-color: tomato;
+    color: white;
+    border: 1px solid tomato;
+}
+.cartButton:active{
+    transform: translateY(2px);
+} 
+.cart{
+    display: block;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+.logo{
+    display: block;
+}
+.badge{
+    background-color: cadetblue;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+}

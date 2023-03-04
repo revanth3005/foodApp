@@ -1,0 +1,58 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "name": "Chicken-PASTA",
+        "price": 100,
+        "description": "Eat and Enjoy The Taste"
+      },
+      {
+        "id": 2,
+        "name": "Veg-PASTA",
+        "price": 50,
+        "description": "Eat and Enjoy The Taste"
+      },
+      {
+        "id": 3,
+        "name": "DrumSticks",
+        "price": 250,
+        "description": "Eat and Enjoy The Taste"
+      },
+      {
+        "id": 4,
+        "name": "PanSticks",
+        "price": 300,
+        "description": "Eat and Enjoy The Taste"
+      },
+      {
+        "id": 5,
+        "name": "Chicken-65",
+        "price": 180,
+        "description": "Eat and Enjoy The Taste"
+      },
+      {
+        "id": 6,
+        "name": "Chicken Wings",
+        "price": 150,
+        "description": "Eat and Enjoy The Taste"
+      },
+      {
+        "id": 7,
+        "name": "Fish",
+        "price": 250,
+        "description": "Eat and Enjoy The Taste"
+      },
+      {
+        "id": 8,
+        "name": "Apollo Fish",
+        "price": 300,
+        "description": "Eat and Enjoy The Taste"
+      },
+      {
+        "id": 9,
+        "name": "Prawns",
+        "price": 330,
+        "description": "Eat and Enjoy The Taste"
+      }
+    ]
+  }
