@@ -8,11 +8,11 @@ import HeaderCartButton from "./HeaderCartButton";
 const Header = ({cartItems}) => {
   return (
     <Fragment>
-      <header className={classes.header}>
+      <header className={classes.header} >
         <h1>SR Meals App</h1>
         <HeaderCartButton cartItems={cartItems} />
       </header>
-      <div className={classes.main_img}>
+      <div className={classes.main_img}  data-aos="fade-down">
         <img src={food_img} alt="Food_img!" />
       </div>
     </Fragment>

@@ -15,7 +15,7 @@ const MeanuItem = (props) => {
           <span>Price:{props.price}</span> <br />
           <span>{props.description}</span> <br />
         </div>
-          <button className='btn btn-dark bt1' onClick={()=>props.addItemsToCart(obj)}>Add</button>
+          <button className='btn btn-outline-dark bt1' onClick={()=>props.addItemsToCart(obj)}>Add</button>
       </div>
       <hr />
     </div>

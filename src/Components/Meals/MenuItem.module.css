@@ -3,15 +3,9 @@
     justify-content: space-between;
     align-items: center;
 }
-.btnn{
-    border: 1px solid black;
-    color: white;
-    background-color: black;
-    border-radius: 5px;
+.bt1:active{
+    transform: translateY(3px) !important;
 }
-.btnn:active{
-    transform: translateY(3px);
-}
-.bt1{
+.bt{
     transform: translateY(3px) !important;
 }

@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import "./App.css";
 import Cart from "./Components/Cart/Cart";
 import Header from "./Components/Layout/Header";
@@ -7,7 +7,7 @@ import db from "./assets/data.json";
 
 function App() {
   const [cartItems, setcartItems] = useState([]);
-  console.log(db);
+  // console.log(db);
   const addItemsToCart = (obj) => {
     const mealexist = cartItems.find((item) => item.id === obj.id);
     if (mealexist) {
@@ -36,20 +36,25 @@ function App() {
       );
     }
   };
-  const handleCardClereance=()=>{
-    setcartItems([])
-  }
-
+  const handleOrderSummary = (value) => {
+    if (value) {
+      return setcartItems([]);
+    }
+  };
+  const handleCardClereance = () => {
+    setcartItems([]);
+  };
   return (
     <Fragment>
-      <Header cartItems={cartItems}/>
+      <Header cartItems={cartItems} />
       <main>
         <Meals addItemsToCart={addItemsToCart} />
         <Cart
-        handleCardClereance={handleCardClereance}
+          handleCardClereance={handleCardClereance}
           cartItems={cartItems}
           addItemsToCart={addItemsToCart}
           removeItemsInCart={removeItemsInCart}
+          handleOrderSummary={handleOrderSummary}
         />
       </main>
     </Fragment>

@@ -1,8 +1,13 @@
-.bt1,.bt2{
-    border: 1px solid black;
-    background-color: black;
-    color: white;
-}
+
 .bt1:active,.bt2:active{
     transform: translateY(3px);
+}
+.cartBt{
+    cursor: pointer;   
+}
+.cartBt:active{
+    transform: translateY(3px);
+}
+.btn:active{
+    transform: translateY(3px) !important;
 }
