@@ -1,13 +1,12 @@
 import axios from "axios";
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import "./cart.css";
 
 const Cart = ({
   cartItems,
   addItemsToCart,
   removeItemsInCart,
-  handleCardClereance,
+  handleCardClearance,
   handleOrderSummary,
 }) => {
   const [checkOutForm, setCheckoutForm] = useState(false);
@@ -82,9 +81,9 @@ const Cart = ({
       if (window.confirm(text)) {
         handleOrderSummary(true);
         setCheckoutForm(false);
-        setTimeout(()=>{
-          alert("SR Meals started Preparing your Food 😊")
-        },4000)
+        setTimeout(() => {
+          alert("SR Meals started Preparing your Food 😊");
+        }, 4000);
       }
     } catch (error) {
       console.log(error.message);
@@ -226,7 +225,7 @@ const Cart = ({
             {cartItems.length !== 0 && (
               <button
                 className="btn btn-outline-danger"
-                onClick={handleCardClereance}
+                onClick={handleCardClearance}
                 style={{ cursor: "pointer", float: "left" }}
               >
                 clear-All

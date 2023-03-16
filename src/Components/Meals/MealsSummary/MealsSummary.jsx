@@ -6,7 +6,7 @@ const MealsSummary = () => {
     <div className={styles.summary} data-aos="zoom-in-up" >
       <h2>Delicious Food, Delivered To</h2>
       <p>
-        Choose your favourite meal from our board selection of menu and enjoy a
+        Choose your Favourite meal from our board selection of menu and enjoy a
         delecious lunch or dinner at home
       </p>
       <p>

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./MenuItem.module.css";
 
-const MeanuItem = (props) => {
+const MenuItem = (props) => {
   const obj={
     name:props.name,
     price:props.price,
@@ -22,4 +22,4 @@ const MeanuItem = (props) => {
   );
 };
 
-export default MeanuItem;
+export default MenuItem;
