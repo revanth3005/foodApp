@@ -9,7 +9,7 @@ const Header = ({cartItems}) => {
   return (
     <Fragment>
       <header className={classes.header} >
-        <h1>SR Meals App</h1>
+        <h1>SRN</h1>
         <HeaderCartButton cartItems={cartItems} />
       </header>
       <div className={classes.main_img}  data-aos="fade-down">

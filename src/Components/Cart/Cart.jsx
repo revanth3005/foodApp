@@ -50,7 +50,15 @@ const Cart = ({
       alert("order details must not be Empty");
       return;
     }
-    if (checkoutUser.mobile.trim().length < 10) {
+
+    let patternMobile = new RegExp(
+      /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/i
+    );
+    const num = checkoutUser.mobile;
+    if (!patternMobile.test(num)) {
+      return alert("Enter a valid Number");
+    }
+    if(checkoutUser.mobile.trim().length !== 10){
       return alert("Enter a valid Number");
     }
     try {
@@ -195,19 +203,23 @@ const Cart = ({
                 </div>
                 <div className="form-floating mb-1">
                   <input
-                    type="number"
+                    type="text"
+                    onInput={
+                      "this.value=this.value.replace(/[^0-9.]/g,'').replace(/(..*?)..*/g,'$1')"
+                    }
                     className="form-control"
                     id="floatingText"
                     placeholder="text"
                     name="mobile"
                     onChange={onChangeHandler}
                     value={checkoutUser.mobile}
+                    pattern="[0-9]*"
                   />
                   <label htmlFor="floatingText">Mobile</label>
                 </div>
                 <button
                   onClick={confirmOrderHandler}
-                  className="btn btn-outline-success"
+                  className="btn btn-outline-success me-2"
                   data-bs-dismiss={displayModal === true ? "modal" : "not"}
                 >
                   Confirm
