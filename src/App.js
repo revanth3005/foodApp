@@ -47,7 +47,7 @@ function App() {
     <Fragment>
       <Header cartItems={cartItems} />
       <main>
-        <Meals addItemsToCart={addItemsToCart} />
+        <Meals addItemsToCart={addItemsToCart} cartItems={cartItems} />
         <Cart
           handleCardClearance={handleCardClearance}
           cartItems={cartItems}

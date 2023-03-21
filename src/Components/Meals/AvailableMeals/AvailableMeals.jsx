@@ -8,7 +8,7 @@ import { MdReport } from "react-icons/md";
 import { GrView } from "react-icons/gr";
 import Report from "../../Report/Report";
 
-const AvailableMeals = ({ addItemsToCart }) => {
+const AvailableMeals = ({ addItemsToCart , cartItems}) => {
   const [mealsData, setMealsData] = useState();
   const [load, setLoad] = useState(false);
   useEffect(() => {
@@ -48,6 +48,7 @@ const AvailableMeals = ({ addItemsToCart }) => {
               price={meal.price}
               description={meal.description}
               id={meal.id}
+              cartItems={cartItems}
             />
           </div>
         ))

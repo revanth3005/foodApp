@@ -3,11 +3,11 @@ import Report from '../Report/Report'
 import AvailableMeals from './AvailableMeals/AvailableMeals'
 import MealsSummary from './MealsSummary/MealsSummary'
 
-const Meals = ({addItemsToCart}) => {
+const Meals = ({addItemsToCart,cartItems}) => {
   return (
     <section>
         <MealsSummary/>
-        <AvailableMeals addItemsToCart={addItemsToCart}/>
+        <AvailableMeals addItemsToCart={addItemsToCart} cartItems={cartItems}/>
         <Report />
     </section>
   )
